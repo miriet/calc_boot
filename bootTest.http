@@ -1,0 +1,20 @@
+### GET request with parameter
+GET http://localhost:8080/calc
+Accept: application/json
+
+### GET request with parameter
+GET http://localhost:8080/calc?printType=HTML
+Accept: application/json
+
+### GET request with parameter
+GET http://localhost:8080/calc?printType=XML
+Accept: application/json
+
+### GET request with parameter
+GET http://localhost:8080/calc?printType=TEXT
+Accept: application/json
+
+### GET request with parameter
+GET http://localhost:8080/calc?index=7
+Accept: application/json
+

@@ -7,14 +7,18 @@ import com.test.calc.decorator.DecoratorIF;
 public class Calculation {
 
     private DecoratorIF decorator;
-    public void calc(PrintType printType){
+    public String  calc(PrintType printType){
+        String result = "";
         for (int idx = 2; idx < 10; idx++) {
-            calc(idx, printType);
+            result += calc(idx, printType);
         }
+        return result;
     }
-    public void calc(int param, PrintType printType) {
-        System.out.println(getTitle(param, printType));
-        System.out.println(getContent(param, printType));
+    public String calc(int param, PrintType printType) {
+        String result = "";
+        result = getTitle(param, printType);
+        result += getContent(param, printType);
+        return result;
     }
 
     private String getTitle(int param, PrintType printType){
