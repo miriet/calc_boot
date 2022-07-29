@@ -3,7 +3,9 @@ package com.test.calc;
 import com.test.calc.common.PrintType;
 import com.test.calc.control.DecoratorFactory;
 import com.test.calc.decorator.DecoratorIF;
+import org.springframework.stereotype.Service;
 
+@Service
 public class Calculation {
 
     private DecoratorIF decorator;
